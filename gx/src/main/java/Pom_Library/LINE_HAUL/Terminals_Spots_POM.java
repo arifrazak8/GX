@@ -78,7 +78,7 @@ public class Terminals_Spots_POM {
         // keyboard.keyRelease(KeyEvent.VK_DOWN);
         // keyboard.keyPress(KeyEvent.VK_ENTER);
         // keyboard.keyRelease(KeyEvent.VK_ENTER);
-       
+       //ddscnsd
         
     }
     public void clickAddTerminal_btn(){
