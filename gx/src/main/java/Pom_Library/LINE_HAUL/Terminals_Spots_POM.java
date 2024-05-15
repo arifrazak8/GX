@@ -1,10 +1,13 @@
 package Pom_Library.LINE_HAUL;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import java.awt.AWTException;	
+import java.awt.Robot;	
+import java.awt.event.KeyEvent;	
 
 
 public class Terminals_Spots_POM {
@@ -65,8 +68,18 @@ public class Terminals_Spots_POM {
     public void setPhone_txt(String p){
         phone_txt.sendKeys(p);
     }
-    public void setAddress_txt(String p){
+    public void setAddress_txt(String p) throws Exception{
         address_txt.sendKeys(p);
+        Thread.sleep(1000);
+        address_txt.sendKeys(Keys.ARROW_DOWN);
+        address_txt.sendKeys(Keys.ENTER);
+        // Robot keyboard= new Robot();
+        // keyboard.keyPress(KeyEvent.VK_DOWN);
+        // keyboard.keyRelease(KeyEvent.VK_DOWN);
+        // keyboard.keyPress(KeyEvent.VK_ENTER);
+        // keyboard.keyRelease(KeyEvent.VK_ENTER);
+       
+        
     }
     public void clickAddTerminal_btn(){
         addTerminal_btn.click();

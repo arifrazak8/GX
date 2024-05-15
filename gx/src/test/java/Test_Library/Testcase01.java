@@ -3,6 +3,7 @@ package Test_Library;
 import Generic_Library.Launch;
 import Pom_Library.LINE_HAUL.Terminals_Spots_POM;
 
+import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
 public class Testcase01 extends Launch {
@@ -23,10 +24,11 @@ public class Testcase01 extends Launch {
         p.clickAddNewTerminalBtn();
         p.setTerminalNumber("8989");
         p.setTerminalName("Automation");
-        p.setTerminalAbbreviation("123");
+        p.setTerminalAbbreviation("154523");
         p.setEmail_txt("test@test.com");
         p.setPhone_txt("4567894561");
-        p.setAddress_txt("adventz infinity");
-        p.clickAddTerminal_btn();
+        p.setAddress_txt("kolka");
+        
+        // p.clickAddTerminal_btn();
     }
 }
